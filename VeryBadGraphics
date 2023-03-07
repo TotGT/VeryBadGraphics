@@ -1,1 +1,15 @@
-Very Bad Graphics
+using System;
+using BepInEx;
+using UnityEngine;
+
+// Token: 0x02000002 RID: 2
+[BepInPlugin("com.tot.VeryBadGraphics", "Texture Mod By Tot", "1.0.0")]
+public class VeryBadGraphics : BaseUnityPlugin
+{
+	// Token: 0x06000001 RID: 1
+	private void Awake()
+	{
+		QualitySettings.masterTextureLimit = 5;
+		Debug.Log("Graphics Changed");
+	}
+}
